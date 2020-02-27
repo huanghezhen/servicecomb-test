@@ -1,6 +1,6 @@
-APPLICATION_ID: pojo
+APPLICATION_ID: springboot
 service_description:
-  name: pojoVertxProvider
+  name: consumer
   version: 0.0.1
   environment: development
 servicecomb:
@@ -13,5 +13,3 @@ servicecomb:
         default: loadbalance
   rest:
     address: 0.0.0.0:8002
-  highway:
-    address: 0.0.0.0:7002

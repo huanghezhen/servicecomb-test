@@ -12,10 +12,6 @@
     <artifactId>pojo-vertx-provider</artifactId>
 
 
-    <properties>
-        <cse.version>2.5.0</cse.version>
-    </properties>
-
     <dependencyManagement>
         <dependencies>
             <dependency>

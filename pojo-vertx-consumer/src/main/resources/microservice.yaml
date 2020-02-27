@@ -13,5 +13,3 @@ servicecomb:
         default: loadbalance
   rest:
     address: 0.0.0.0:8001
-  highway:
-    address: 0.0.0.0:7001
