@@ -1,7 +1,6 @@
 package hhz.pojo.vertx.consumer;
 
 import org.apache.servicecomb.foundation.common.utils.BeanUtils;
-import org.springframework.stereotype.Component;
 
 /**
  * @ClassName: PojoVertxConsumerMain
