@@ -1,0 +1,17 @@
+APPLICATION_ID: pojo
+service_description:
+  name: pojoVertxProvider
+  version: 0.0.1
+  environment: development
+servicecomb:
+  service:
+    registry:
+      address: http://192.168.2.243:30100
+  handler:
+    chain:
+      Consumer:
+        default: loadbalance
+  rest:
+    address: 0.0.0.0:8002
+  highway:
+    address: 0.0.0.0:7002
