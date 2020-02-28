@@ -37,9 +37,10 @@
             <artifactId>java-chassis-spring-boot-starter-standalone</artifactId>
         </dependency>
 
+
         <dependency>
-            <groupId>com.huawei.paas.cse</groupId>
-            <artifactId>cse-solution-service-engine</artifactId>
+            <groupId>hhz</groupId>
+            <artifactId>springboot-common</artifactId>
         </dependency>
     </dependencies>
 

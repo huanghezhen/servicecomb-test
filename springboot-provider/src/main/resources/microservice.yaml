@@ -1,6 +1,6 @@
 APPLICATION_ID: springboot
 service_description:
-  name: consumer
+  name: provider
   version: 0.0.1
   environment: development
 servicecomb:
@@ -12,4 +12,5 @@ servicecomb:
       Consumer:
         default: loadbalance
   rest:
-    address: 0.0.0.0:8001
+    address: 0.0.0.0:8002
+
