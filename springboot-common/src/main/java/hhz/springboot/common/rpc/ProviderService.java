@@ -18,6 +18,7 @@ public interface ProviderService
     String getStr1();
     String getStr2();
     String getStr3();
+    String testInteger(Integer param);
 
     BaseResponse<List<OrderDTO>> getOrder(OrderSubDTO orderSubDTO);
 }

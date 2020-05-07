@@ -6,10 +6,12 @@ service_description:
 servicecomb:
   service:
     registry:
-      address: http://192.168.2.243:30100
+      address: http://192.168.2.11:30100
   handler:
     chain:
       Consumer:
         default: loadbalance
   rest:
     address: 0.0.0.0:8001
+  highway:
+    address: 0.0.0.0:7001

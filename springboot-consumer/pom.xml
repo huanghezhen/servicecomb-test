@@ -42,6 +42,10 @@
             <groupId>hhz</groupId>
             <artifactId>springboot-common</artifactId>
         </dependency>
-    </dependencies>
 
+        <dependency>
+            <groupId>org.apache.servicecomb</groupId>
+            <artifactId>transport-highway</artifactId>
+        </dependency>
+    </dependencies>
 </project>

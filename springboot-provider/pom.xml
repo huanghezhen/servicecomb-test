@@ -43,18 +43,10 @@
             <artifactId>springboot-common</artifactId>
         </dependency>
 
+        <dependency>
+            <groupId>org.apache.servicecomb</groupId>
+            <artifactId>transport-highway</artifactId>
+        </dependency>
     </dependencies>
-
-    <build>
-        <plugins>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-compiler-plugin</artifactId>
-                <configuration>
-                    <compilerArgument>-parameters</compilerArgument>
-                </configuration>
-            </plugin>
-        </plugins>
-    </build>
 
 </project>

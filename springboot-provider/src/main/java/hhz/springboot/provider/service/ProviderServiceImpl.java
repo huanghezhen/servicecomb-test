@@ -1,4 +1,4 @@
-package hhz.springboot.provider;
+package hhz.springboot.provider.service;
 
 import hhz.springboot.common.entity.BaseResponse;
 import hhz.springboot.common.entity.OrderDTO;
@@ -38,6 +38,12 @@ public class ProviderServiceImpl implements ProviderService
     @Override
     public String getStr3()
     {
+        return null;
+    }
+
+    @Override
+    public String testInteger(Integer param) {
+        System.out.println(param);
         return null;
     }
 
