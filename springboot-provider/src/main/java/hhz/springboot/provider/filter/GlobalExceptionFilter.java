@@ -3,7 +3,6 @@ package hhz.springboot.provider.filter;
 
 import hhz.springboot.common.entity.BaseResponse;
 import hhz.springboot.common.entity.CommonResponseMsg;
-import org.apache.http.HttpStatus;
 import org.apache.servicecomb.swagger.invocation.Response;
 import org.apache.servicecomb.swagger.invocation.SwaggerInvocation;
 import org.apache.servicecomb.swagger.invocation.exception.ExceptionToProducerResponseConverter;
@@ -24,11 +23,7 @@ public class GlobalExceptionFilter implements ExceptionToProducerResponseConvert
     @Override
     public Response convert(SwaggerInvocation swaggerInvocation, Exception e) {
 
-        System.out.println("----------------------------------------------------------");
-
-        //String s = JSONObject.toJSONString(BaseResponse.newInstance(CommonResponseMsg.ERROR));
-
         return Response
-                .create(HttpStatus.SC_OK, String.valueOf(HttpStatus.SC_OK), BaseResponse.newInstance(CommonResponseMsg.ERROR));
+                .succResp(BaseResponse.newInstance(CommonResponseMsg.ERROR));
     }
 }
