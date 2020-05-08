@@ -26,7 +26,7 @@ public class GlobalExceptionFilter implements ExceptionToProducerResponseConvert
 
         System.out.println("----------------------------------------------------------");
 
-        //String s = JSONObject.toJSONString();
+        //String s = JSONObject.toJSONString(BaseResponse.newInstance(CommonResponseMsg.ERROR));
 
         return Response
                 .create(HttpStatus.SC_OK, String.valueOf(HttpStatus.SC_OK), BaseResponse.newInstance(CommonResponseMsg.ERROR));
