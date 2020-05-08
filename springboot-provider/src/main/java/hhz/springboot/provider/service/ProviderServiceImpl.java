@@ -48,6 +48,14 @@ public class ProviderServiceImpl implements ProviderService
     }
 
     @Override
+    public String testException() throws Exception{
+        if (true) {
+            throw new Exception();
+        }
+        return "ss";
+    }
+
+    @Override
     public BaseResponse<List<OrderDTO>> getOrder(OrderSubDTO orderSubDTO)
     {
         return null;

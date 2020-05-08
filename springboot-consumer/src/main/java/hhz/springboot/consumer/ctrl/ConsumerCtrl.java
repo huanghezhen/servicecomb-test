@@ -23,4 +23,12 @@ public class ConsumerCtrl {
     public String testInteger() {
         return providerService.testInteger(0);
     }
+
+
+    @GetMapping("/testException")
+    public String testException() throws Exception {
+        String s = providerService.testException();
+        System.out.println(s);
+        return s;
+    }
 }

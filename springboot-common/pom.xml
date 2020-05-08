@@ -11,5 +11,30 @@
 
     <artifactId>springboot-common</artifactId>
 
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>org.apache.servicecomb</groupId>
+                <artifactId>java-chassis-dependencies</artifactId>
+                <version>${servicecomob.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+            <dependency>
+                <groupId>com.huawei.paas.cse</groupId>
+                <artifactId>cse-dependency</artifactId>
+                <version>${cse.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
 
+
+    <dependencies>
+        <dependency>
+            <groupId>org.apache.servicecomb</groupId>
+            <artifactId>java-chassis-spring-boot-starter-standalone</artifactId>
+        </dependency>
+    </dependencies>
 </project>

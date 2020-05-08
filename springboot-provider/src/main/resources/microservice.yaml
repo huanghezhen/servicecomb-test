@@ -12,7 +12,7 @@ servicecomb:
       Consumer:
         default: loadbalance
   rest:
-    address: 0.0.0.0:8002
+    address: 0.0.0.0:6002
   highway:
-    address: 0.0.0.0:7002
+    address: 0.0.0.0:5002
 
