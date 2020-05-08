@@ -19,7 +19,7 @@ public interface ProviderService
     String getStr2();
     String getStr3();
     String testInteger(Integer param);
-    String testException()throws Exception;
+    BaseResponse testException()throws Exception;
 
     BaseResponse<List<OrderDTO>> getOrder(OrderSubDTO orderSubDTO);
 }

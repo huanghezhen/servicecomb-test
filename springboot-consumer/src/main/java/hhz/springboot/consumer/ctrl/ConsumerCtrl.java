@@ -1,5 +1,6 @@
 package hhz.springboot.consumer.ctrl;
 
+import hhz.springboot.common.entity.BaseResponse;
 import hhz.springboot.common.rpc.ProviderService;
 import org.apache.servicecomb.provider.pojo.RpcReference;
 import org.apache.servicecomb.provider.rest.common.RestSchema;
@@ -26,9 +27,7 @@ public class ConsumerCtrl {
 
 
     @GetMapping("/testException")
-    public String testException() throws Exception {
-        String s = providerService.testException();
-        System.out.println(s);
-        return s;
+    public BaseResponse testException() throws Exception {
+        return providerService.testException();
     }
 }

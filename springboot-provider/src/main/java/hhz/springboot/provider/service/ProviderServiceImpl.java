@@ -48,11 +48,11 @@ public class ProviderServiceImpl implements ProviderService
     }
 
     @Override
-    public String testException() throws Exception{
+    public BaseResponse testException() throws Exception{
         if (true) {
             throw new Exception();
         }
-        return "ss";
+        return BaseResponse.newInstance();
     }
 
     @Override

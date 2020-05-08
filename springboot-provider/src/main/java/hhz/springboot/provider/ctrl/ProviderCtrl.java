@@ -1,5 +1,6 @@
 package hhz.springboot.provider.ctrl;
 
+import hhz.springboot.common.entity.BaseResponse;
 import org.apache.servicecomb.provider.rest.common.RestSchema;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -14,10 +15,10 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @RequestMapping(path = "/")
 public class ProviderCtrl {
     @GetMapping("/testException1")
-    public String testException1() throws Exception {
+    public BaseResponse testException1() throws Exception {
         if (true) {
             throw new Exception();
         }
-        return "";
+        return BaseResponse.newInstance();
     }
 }
