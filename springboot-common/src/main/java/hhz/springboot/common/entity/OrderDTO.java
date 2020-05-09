@@ -1,5 +1,7 @@
 package hhz.springboot.common.entity;
 
+import io.swagger.annotations.ApiModelProperty;
+
 import java.util.List;
 
 /**
@@ -10,6 +12,7 @@ import java.util.List;
  */
 public class OrderDTO
 {
+    @ApiModelProperty(hidden = true)
     private String name;
 
     private List<OrderSubDTO> orderDTOList;

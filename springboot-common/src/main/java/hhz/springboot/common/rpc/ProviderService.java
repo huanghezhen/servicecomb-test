@@ -23,4 +23,6 @@ public interface ProviderService
     BaseResponse testBoolean()throws Exception;
 
     BaseResponse<List<OrderDTO>> getOrder(OrderSubDTO orderSubDTO);
+
+    BaseResponse<String> testApiModelProperty(OrderDTO orderDTO);
 }

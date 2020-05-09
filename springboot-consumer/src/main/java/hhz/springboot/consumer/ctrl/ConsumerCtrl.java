@@ -1,6 +1,7 @@
 package hhz.springboot.consumer.ctrl;
 
 import hhz.springboot.common.entity.BaseResponse;
+import hhz.springboot.common.entity.OrderDTO;
 import hhz.springboot.common.rpc.ProviderService;
 import org.apache.servicecomb.provider.pojo.RpcReference;
 import org.apache.servicecomb.provider.rest.common.RestSchema;
@@ -33,5 +34,12 @@ public class ConsumerCtrl {
     @GetMapping("/testBoolean")
     public BaseResponse testBoolean() throws Exception {
         return providerService.testBoolean();
+    }
+
+    @GetMapping("/testApiModelProperty")
+    public BaseResponse<String> testApiModelProperty() throws Exception {
+        OrderDTO orderDTO = new OrderDTO();
+        orderDTO.setName("hhz");
+        return providerService.testApiModelProperty(orderDTO);
     }
 }
