@@ -1,6 +1,5 @@
 package hhz.springboot.provider.service;
 
-import com.alibaba.fastjson.JSONObject;
 import hhz.springboot.common.entity.BaseResponse;
 import hhz.springboot.common.entity.CommonResponseMsg;
 import hhz.springboot.common.entity.OrderDTO;
@@ -70,7 +69,7 @@ public class ProviderServiceImpl implements ProviderService
 
     @Override
     public BaseResponse<String> testApiModelProperty(OrderDTO orderDTO) {
-        System.out.println(JSONObject.toJSONString(orderDTO));
+        System.out.println(orderDTO.getName());
 
         return BaseResponse.newInstance(orderDTO.getName());
     }
