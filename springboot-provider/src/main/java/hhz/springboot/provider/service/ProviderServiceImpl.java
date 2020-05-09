@@ -1,6 +1,7 @@
 package hhz.springboot.provider.service;
 
 import hhz.springboot.common.entity.BaseResponse;
+import hhz.springboot.common.entity.CommonResponseMsg;
 import hhz.springboot.common.entity.OrderDTO;
 import hhz.springboot.common.entity.OrderSubDTO;
 import hhz.springboot.common.rpc.ProviderService;
@@ -52,7 +53,12 @@ public class ProviderServiceImpl implements ProviderService
         if (true) {
             throw new Exception();
         }
-        return BaseResponse.newInstance();
+        return BaseResponse.newInstanceSuccess();
+    }
+
+    @Override
+    public BaseResponse testBoolean() throws Exception {
+        return BaseResponse.newInstance(CommonResponseMsg.ERROR);
     }
 
     @Override

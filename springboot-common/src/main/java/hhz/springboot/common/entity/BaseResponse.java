@@ -23,6 +23,9 @@ public class BaseResponse<T> {
     @ApiModelProperty("返回数据")
     private T data;
 
+    public BaseResponse() {
+    }
+
     private BaseResponse(ResponseMsg responseMsg) {
         status = false;
         resultCode = responseMsg.getResultCode();
@@ -42,14 +45,10 @@ public class BaseResponse<T> {
         this(CommonResponseMsg.SUCCESS, data);
     }
 
-    private BaseResponse() {
-        this(CommonResponseMsg.SUCCESS, null);
-    }
 
-    public static <T> BaseResponse<T> newInstance() {
-        return new BaseResponse<>();
+    public static <T> BaseResponse<T> newInstanceSuccess() {
+        return new BaseResponse<>(CommonResponseMsg.SUCCESS, null);
     }
-
 
     public static <T> BaseResponse<T> newInstance(ResponseMsg responseMsg) {
         return new BaseResponse<>(responseMsg);

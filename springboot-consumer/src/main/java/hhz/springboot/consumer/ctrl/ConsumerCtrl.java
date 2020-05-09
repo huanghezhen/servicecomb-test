@@ -30,4 +30,8 @@ public class ConsumerCtrl {
     public BaseResponse testException() throws Exception {
         return providerService.testException();
     }
+    @GetMapping("/testBoolean")
+    public BaseResponse testBoolean() throws Exception {
+        return providerService.testBoolean();
+    }
 }
